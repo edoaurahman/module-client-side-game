@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Slayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="game">
+        <canvas id="game" width="300" height="600"></canvas>
+    </div>
+    <canvas id="stats" width="200" height="250"></canvas>
+
+    <div class="menu">
+        <h2>Virus Slayer</h2>
+        <a class="btn-danger" type="button" onclick="restartGame()">Restart</a>
+        <a href="./index.html">Quit</a>
+
+    </div>
+
+    <div class="gameover">
+        <canvas id="gameover" width="500" height="200"></canvas>
+        <div class="button-restart">
+            <button class="btn-danger" type="button" onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+
+    <div class="gamepause">
+        <canvas id="gamepause" width="500" height="200"></canvas>
+        <h1>Game paused</h1>
+        <div class="button-restart">
+            <button class="btn-primary" type="button" onclick="continueGame()">Continue</button>
+            <button class="btn-danger" type="button" onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
